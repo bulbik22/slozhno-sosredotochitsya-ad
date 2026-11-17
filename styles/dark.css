@@ -4,17 +4,13 @@
   переключая тему
 */
 
-:root.theme-dark {
-  --bcg-link: url("../images/cover-image-dark.png");
-  --header-title-color: #DB00FF;
-  --shadow-color: #FF0070; 
-  --accent-color:#000028;
-  --accent-bg-color:#FF0070;
-  --main-color:#F1B2CE;
-  --rec-color:#FF0070;
-  --section-title-color: #FF0070;
-}
-
-:root.theme-dark .page .header__rec-indicator {
-  display: inline; /* или block, но так как это span — inline */
+.page.theme_dark {
+  --bg-color: #000028;
+  --accent-color: #FF0070;
+  --base-color: var(--accent-color);
+  --text-color: #F1B2CE;
+  --text-decor-color: var(--bg-color);
+  --logo-color: #DB00FF;
+  --logo-shadow-color: #FF0070;
+  --cover-image: url(../images/cover-image-dark.png);
 }
