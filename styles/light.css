@@ -1,31 +1,37 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
   --bcg-link: url("../images/cover-image-light.png");
   --header-title-color: #FFC2E6;
-  --shadow-color: #FF8DCB; 
-  --accent-color:#000028;
-  --accent-bg-color:#FF8DCB;
-  --main-color:#353430;
+  --shadow-color: #FF8DCB;
+  --accent-color: #FFF1F7;
+  --accent-bg-color: #FF8DCB;
+  --main-color: #353430;
   --rec-color: transparent;
+  --button-border-color: rgba(50, 49, 45, 0.40);
+  --section-title-color: #353430;
+  --link-shadow-color: #FF8DCB;
+  --title-decor-color: #353430;
 }
 
-/* Остальные стили,:) только при необходимости */
+:root.theme-light .header__rec-indicator {
+  display: none;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
     --bcg-link: url("../images/cover-image-light.png");
     --header-title-color: #FFC2E6;
-    --shadow-color: #FF8DCB; 
-    --accent-color:#000028;
-    --accent-bg-color:#FF8DCB;
-    --main-color:#353430;
+    --shadow-color: #FF8DCB;
+    --accent-color: #FFF1F7;
+    --accent-bg-color: #FF8DCB;
+    --main-color: #353430;
     --rec-color: transparent;
+    --button-border-color: rgba(50, 49, 45, 0.40);
+    --section-title-color: #353430;
+    --link-shadow-color: #FF8DCB;
+    --title-decor-color: #353430;
   }
 
-  /* Остальные стили, только при необходимости */
+  .page .header__rec-indicator {
+    display: none;
+  }
 }
